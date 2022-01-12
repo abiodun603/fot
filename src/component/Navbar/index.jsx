@@ -27,13 +27,13 @@ function Navbar(props) {
                             <Link to='/' className="sidebar_text">
                                 Blog
                             </Link>
-                            <Link to='/' className="sidebar_text">
+                            <Link to='/about' className="sidebar_text">
                                 About
                             </Link>
                             <Link to='/' className="sidebar_text">
                                 Our services
                             </Link>
-                            <Link to='/' className="sidebar_text">
+                            <Link to='/blog' className="sidebar_text">
                                 Contact
                             </Link>
                      </div>
@@ -90,13 +90,13 @@ function Navbar(props) {
                             <NavLinks to='/'>
                                 Blog
                             </NavLinks>
-                            <NavLinks to='/'>
+                            <NavLinks to='/about'>
                                 About
                             </NavLinks>
                             <NavLinks to='/service'>
                                 Our services
                             </NavLinks>
-                            <NavLinks to='/'>
+                            <NavLinks to='/blog'>
                                 Contact
                             </NavLinks>
                         </NavList>
