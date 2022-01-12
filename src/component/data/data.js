@@ -1,4 +1,20 @@
 
+export const landingCarousel = [
+    {
+        id: 1,
+        image: "pole.png"
+    },
+    {
+        id: 2,
+        image: "pole.png"
+    },
+    {
+        id:3,
+        image: "pole.png"
+    }
+]
+
+
 export const Nojaproducts = [
     {
         name: "OSM Three Phase",

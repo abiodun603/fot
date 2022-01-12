@@ -17,6 +17,7 @@ export const HomeContent = styled.div`
 export const HomePage = styled.div`
     display: flex;
     flex-direction: row;
+    min-height: 514px;
     padding-right: ${SIZES.padding};
     background-repeat:no-repeat;
     background-size: cover;
@@ -118,12 +119,25 @@ export const ButtonTouch = styled.button`
 
 export const RightSection = styled.div`
     display:block;
-    max-width: 514px;
-    max-height: 370.7px;
+    width: 400px;
+    max-height: 514px;
+    
     margin-top: 73px;
+    position: relative;
+    box-sizing: border-box;
 
     @media screen and (max-width:1120px){
         display:none;
+      }
+
+      .carousel_content {
+          height: 100%;
+      }
+
+      .carousel_items {
+        display: flex;
+        flex-direction: row;
+        position: relative;
       }
 
     
@@ -131,8 +145,8 @@ export const RightSection = styled.div`
 `;
 
 export const HomePic = styled.img`
-    width: 100%;
-    height: 100%;
+    width: 442px;
+    height: 369px;
    
 `;
 
@@ -265,3 +279,128 @@ export const WFE = styled.div`
     }
 
 `;
+
+export const HomeService = styled.div`
+    display:flex;
+    flex-direction:column;
+    .home_service_title {
+        display:flex;
+        flex-direction:row;
+        position: relative;
+        justify-content:center;
+        margin-top: 100px;
+        margin-bottom: 92px;
+    }
+    .home_service_title .home_text {
+        display:flex;
+        align-self:flex-end;
+        font-size: 48px;
+        color: #030762;
+        text-align:center;
+        font-weight: 600;
+
+        @media screen and (max-width: 600px){
+            font-size: 36px;
+        }
+       
+    }
+    .home_service_title img {
+        position: absolute;
+        right: 10%;
+        bottom:10%;
+        
+
+        @media screen and (max-width: 759px){
+            bottom -10%;
+        }
+
+    }
+
+    .solution_info {
+       
+       display:flex;
+        background: #F9F9F9;
+        width:100%;
+        height: 100%;
+
+        @media screen and (max-width: 1047px){
+            flex-direction: column;
+            align-items:center;
+            justify-content:center;
+        }
+
+    
+    }
+
+    .solution_info img {
+        @media screen and (max-width: 1047px){
+            height:400px;
+            padding-top: 30px;
+
+        }
+
+        @media screen and (max-width: 500px){
+            width: 90%;
+
+        }
+
+    }
+
+    .solution_body {
+        margin-top:100px;
+        margin-bottom:50px;
+        margin-left: 87px;
+        margin-right: 99px;
+        @media screen and (max-width: 1205px){
+            margin-left:20px;
+        }
+        @media screen and (max-width: 1120px){
+            margin-right: 20px;
+        }
+
+
+    }
+    .solution_title {
+        font-weight: 600;
+        font-size: 36px;
+        color: #030762;
+
+    }
+    .btn_touch {
+        width: 150px;
+        height: 50px;
+        background: #030762;
+        border-radius: 6px;
+        color: #fff;
+        border:none;
+        outline: none !important;
+        cursor:pointer;
+        margin-top: 38px;
+    }
+
+    .solution_subtitle{
+        max-width: 535px;
+    }
+`;
+export const HomeTest = styled.div`
+    width:100%;
+    height: 637px;
+    padding-top: 104px;
+    background: url(${process.env.PUBLIC_URL + `/Image/home/testimonialBg.svg`});
+
+    .home_test_title {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 132.69%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .home_test_subtitle {
+        font-size: 24px;
+        line-height: 137.2%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    `;

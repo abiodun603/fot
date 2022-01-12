@@ -3,12 +3,14 @@ import { FaFacebook, FaInstagram, FaInstagramSquare, FaTimes, FaTwitter } from '
 import {} from 'react-icons/md';
 import {FiX} from 'react-icons/fi'
 import { Link } from 'react-router-dom';
-import {NavContainer,Nav,NavTopHeader,CompanyInfo,ComNo,FontPhone,PhoneText,ComEmail,FontEmail,EmailText,ComTime,FontClock,ClockText,SocialInfo,SocialIcon,FacebookImg,InstagramImg,TwitterImg,NavBottomHeader,NavSection,NavHamBar,LogoBar,LogoImage,NavList,NavLinks,NavReq,ReqText,FontArrow} from './NavbarStyled';
+import {NavContainer,Nav,NavTopHeader,CompanyInfo,ComNo,FontPhone,
+    PhoneText,ComEmail,FontEmail,EmailText,ComTime,FontClock,ClockText,
+    SocialInfo,SocialIcon,FacebookImg,InstagramImg,TwitterImg,NavBottomHeader,
+    NavSection,NavHamBar,LogoBar,LogoImage,NavList,NavLinks,NavReq,ReqText,FontArrow} from './NavbarStyled';
 import { DarkBg } from '../../container/e-learning/elearning';
 function Navbar(props) {
     return (
-        <>
-            
+        <> 
         <NavContainer>
             {
                 props.sidebar &&
@@ -72,7 +74,6 @@ function Navbar(props) {
                 </NavTopHeader>
                 <NavBottomHeader>
                     <NavSection>
-                        
                         <NavHamBar onClick={() => props.setSidebar(true)}/>
                         <LogoBar>
                             <LogoImage src={process.env.PUBLIC_URL + `/Image/description/fixLogo.svg`} />
@@ -80,6 +81,9 @@ function Navbar(props) {
                         <NavList>
                             <NavLinks to='/'>
                                 Home
+                            </NavLinks>
+                            <NavLinks to='/service'>
+                                Our services
                             </NavLinks>
                             <NavLinks to='/products'>
                                 Shop
@@ -90,11 +94,8 @@ function Navbar(props) {
                             <NavLinks to='/'>
                                 Blog
                             </NavLinks>
-                            <NavLinks to='/'>
+                            <NavLinks to='/about'>
                                 About
-                            </NavLinks>
-                            <NavLinks to='/service'>
-                                Our services
                             </NavLinks>
                             <NavLinks to='/'>
                                 Contact
@@ -107,12 +108,10 @@ function Navbar(props) {
                         <FontArrow src={process.env.PUBLIC_URL + `/Image/Icon/forward.png`}/>
                     </NavReq>
                 </NavBottomHeader> 
-              
             </Nav>
             {
                 props.sidebar && <DarkBg className="side_darkbg"></DarkBg>
-            }
-            
+            }  
         </NavContainer>
         </>
     )
@@ -120,4 +119,3 @@ function Navbar(props) {
 
 
 export default Navbar
- 

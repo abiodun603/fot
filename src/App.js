@@ -7,6 +7,10 @@ import Products from './container/Products';
 import Elearning from './container/e-learning';
 import Home from './container/Home';
 import Service from './container/Service';
+import About from './container/About';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 
@@ -33,6 +37,9 @@ function App()
                                                 </Route>
                                                 <Route path="/service">
                                                         <Service sidebar={sidebar} setSidebar={setSidebar} />
+                                                </Route>
+                                                <Route path="/about">
+                                                        <About sidebar={sidebar} setSidebar={setSidebar} />
                                                 </Route>
                                                 
                                         </Router>
