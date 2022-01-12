@@ -14,7 +14,6 @@ import Six from "../../assets/image/about/icon/6.svg"
 import Seven from "../../assets/image/about/icon/7.svg"
 import Eight from "../../assets/image/about/icon/8.svg"
 import Nine from "../../assets/image/about/icon/9.svg"
-
 import {frequentQuestion} from "../../data/question"
 import {IoIosArrowUp, IoIosArrowDown} from "react-icons/io"
 

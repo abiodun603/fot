@@ -9,6 +9,7 @@ import Home from './container/Home';
 import Service from './container/Service';
 import Blog from './container/blog/Blog';
 import About from './container/about/About';
+import Contact from './container/contact/Contact';
 
 
 
@@ -21,7 +22,7 @@ function App()
                     <GlobalStyles sidebar={sidebar} />
                         <Router>
                                 <Route path="/" exact>
-                                        <Home sidebar={sidebar} setSidebar={setSidebar} />
+                                        <Contact sidebar={sidebar} setSidebar={setSidebar} />
                                 </Route>
                                 <Route path="/description">
                                         <Description sidebar={sidebar} setSidebar={setSidebar} />
