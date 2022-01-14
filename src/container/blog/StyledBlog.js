@@ -277,6 +277,10 @@ export const WorkHour = styled.div `
 
 // Question
 export const QuestionWrapper = styled.div `
+
+    @media screen and (max-width: 468px){
+        h2
+    }
 `
 export const Faq = styled.div `
     padding-top: 10px;
@@ -284,6 +288,11 @@ export const Faq = styled.div `
     border-bottom: 1px solid #D0D0D0;
     width: 500px;
 
+    @media screen and (max-width: 468px){
+        flex-direction: column;
+        width: 100vw;
+        padding: 1rem;
+    }
 `
 
 export const Wrap = styled.div `

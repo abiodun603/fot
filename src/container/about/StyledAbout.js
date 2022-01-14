@@ -6,6 +6,11 @@ export const TransWrapper = styled.div `
     align-items: center;
     justify-content: space-evenly;
     padding: 2rem 6rem;
+
+    @media screen and (max-width: 468px){
+        flex-direction : column;
+        padding: 2rem 2rem;
+    }
 `
 
 export const TransContainer = styled.div `
@@ -25,6 +30,11 @@ export const TransContainer = styled.div `
         margin-bottom: 1rem  !important;
     }
 
+    @media screen and (max-width: 468px){
+        h2{
+            font-size: 24px;
+        }
+    }
     
 
 `
@@ -32,6 +42,12 @@ export const TransContainer = styled.div `
 export const TransImage = styled.div   `
     img{
         width: 400px;
+    }
+
+    @media screen and (max-width: 468px){
+        img{
+            width: 300px;
+        }
     }
 `
 
@@ -49,10 +65,19 @@ export const CoreWrapper = styled.div `
         font-weight: 600;
         margin-bottom: 2.5rem !important;
     }
+
+    @media screen and (max-width: 468px){
+        h2{
+            margin-bottom: unset !important;
+        }
+    }
 `
 export const CoreContainer = styled.div `
     display: flex;
     
+    @media screen and (max-width: 468px){
+        flex-direction: column;
+    }
 `
 
 export const CoreDescCon = styled.div `
@@ -64,6 +89,10 @@ export const CoreDescCon = styled.div `
 
     img{
         width: 40px;
+    }
+
+    @media screen and (max-width: 468px){
+        margin-top: 2rem;
     }
 `
 
@@ -96,6 +125,11 @@ export const DescWrapper = styled.div `
     width: 100%;
     height: 80vh;
     display: flex;
+
+    @media screen and (max-width: 468px){
+        flex-direction: column;
+        height: 100%;
+    }
 `
 
 export const DescBanner = styled.div `
@@ -104,6 +138,10 @@ export const DescBanner = styled.div `
     background-image: url(${pole});
     background-position: center center;
     object-fit: contain;
+
+    @media screen and (max-width: 468px){
+        /* f */
+    }
 
 `
 
@@ -127,6 +165,11 @@ export const DescView = styled.div `
         font-size: 16px;
         margin-bottom: 1rem !important;
     }
+
+    @media screen and (max-width: 468px){
+        padding-left: 2.5rem;
+        padding-right: 1rem;
+    }
 `
 // Accordion
 export const QuestionWrapper = styled.div`
@@ -145,6 +188,15 @@ export const QuestionWrapper = styled.div`
 
     span{
         color: #FD0014;
+    }
+
+    @media screen and (max-width: 468px){
+        margin: 4rem 2rem;
+
+        h3{
+            font-size: 24px; 
+            margin-bottom: 1rem !important;
+        }
     }
 `
 
