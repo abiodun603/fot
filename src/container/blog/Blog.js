@@ -132,7 +132,7 @@ const Work = () => {
 
                         <WorkHour>
                             <span>Emergency on call basis</span>
-                            <p>24ht/7days</p>
+                            <p>24hr/7days</p>
                         </WorkHour>
                     </WorkHourContainer>
                 </WorkContainer>

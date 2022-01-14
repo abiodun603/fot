@@ -29,6 +29,13 @@ export const BlogWrapper = styled.div `
     height: 100vh;
     display: flex;
     margin: 5rem auto 0 auto;
+
+    @media screen and (max-width: 468px){
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin: unset;
+    }
 `
 
 export const BlogBanner = styled.div `
@@ -38,11 +45,18 @@ export const BlogBanner = styled.div `
     background-color: #030762;
     padding-left: 2.5rem;
     padding-top: 3rem;
+    
 
     p{
         font-weight: 700;
         font-size:24px;
         color: #FFFFFF;
+    }
+
+    @media screen and (max-width: 468px){
+        width: 100%;
+        padding-bottom: 2rem
+
     }
 `
 
@@ -88,6 +102,12 @@ export const FormWrapper = styled.form `
     width: 50%;
     height: 100%;
     background: #F9F9F9;
+
+    @media screen and (max-width: 468px){
+        width: 100%;
+        padding-top: 2rem
+        padding-bottom: 2rem
+    }
 `
 
 export const BlogForm = styled.div `
@@ -174,7 +194,15 @@ export const WorkWrapper = styled.div `
     margin: 2.5rem auto;
     border-radius: 10px;
     display: flex;
-     align-items: center;
+    flex-direction: row;
+    align-items: center;
+
+
+    @media screen and (max-width: 468px){
+        height: 100%;
+        margin: unset;
+        width: 100%;
+    }
 `
 export const WorkContainer = styled.div `
     width: 100%;
@@ -184,6 +212,14 @@ export const WorkContainer = styled.div `
 
     img{
         width: 200px;
+    }
+
+    @media screen and (max-width: 468px){
+       flex-direction: column;
+       align-items: center;
+       padding-top: 2rem;
+       padding-bottom: 2rem;
+       justify-content: unset;
     }
 `
 
@@ -201,6 +237,18 @@ export const WorkTitle = styled.div `
     p{
         color: #FD0014;
         font-size: 14px;
+    }
+
+    @media screen and (max-width: 468px){
+        margin-top: 1.5rem;
+
+        h2{
+            text-align: center
+        }
+        
+        p{
+            text-align: center;
+        }
     }
 `
 
@@ -220,6 +268,10 @@ export const WorkHour = styled.div `
     p{
         color: #FFFFFF;
         font-size: 24px;
+    }
+
+    @media screen and (max-width: 468px){
+        margin-top: 1rem;
     }
 `
 
