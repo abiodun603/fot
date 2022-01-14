@@ -1,6 +1,40 @@
 import styled from 'styled-components'
 
+export const BlogLand = styled.div `
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 64px;
+        color: #030762
+    }
+
+    p{
+        color: #505050;
+        font-size: 16px
+    }
+
+    .searchContainer{
+        width: 400px;
+        margin-top: 2rem;
+        position: relative;
+    }
+
+    .searchIcon{
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        color: #A8A8A8;
+    }
+`
+
 export const BlogContainer = styled.div `
+    margin-bottom: 4rem;
     /* =========== News ============= */
 .news__wrapper{
     display: flex;
@@ -47,9 +81,16 @@ export const BlogContainer = styled.div `
     border-radius: 6px;
 }
 
+.image__container{
+    width: 100%;
+    height: 200px;
+    margin-bottom: .5rem;
+}
+
 .news__img{
-    width: 360px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .news__card:hover{

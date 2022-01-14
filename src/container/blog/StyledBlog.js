@@ -279,7 +279,7 @@ export const WorkHour = styled.div `
 export const QuestionWrapper = styled.div `
 
     @media screen and (max-width: 468px){
-        h2
+        /* h2 */
     }
 `
 export const Faq = styled.div `
