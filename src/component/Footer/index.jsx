@@ -17,9 +17,9 @@ function Footer() {
                             <FooterNavLink to="/service">Our services</FooterNavLink>
                             <FooterNavLink to="/products">Shop</FooterNavLink>
                             <FooterNavLink to="/elearn">e-learning</FooterNavLink>
-                            <FooterNavLink to="/">Blog</FooterNavLink>
-                            <FooterNavLink to="/">About</FooterNavLink>
-                            <FooterNavLink to="/">Contact</FooterNavLink>
+                            <FooterNavLink to="/blog">Blog</FooterNavLink>
+                            <FooterNavLink to="/about">About</FooterNavLink>
+                            <FooterNavLink to="/contact">Contact</FooterNavLink>
                         </FooterNavList>
                     </FooterNav>
                     <FooterSocialLink>

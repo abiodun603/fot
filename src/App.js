@@ -7,10 +7,12 @@ import Products from './container/Products';
 import Elearning from './container/e-learning';
 import Home from './container/Home';
 import Service from './container/Service';
-import About from './container/About';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Blog from './container/blog/Blog';
+import About from './container/about/About';
+import Contact from './container/contact/Contact';
 
 
 
@@ -40,6 +42,12 @@ function App()
                                                 </Route>
                                                 <Route path="/about">
                                                         <About sidebar={sidebar} setSidebar={setSidebar} />
+                                                </Route>
+                                                <Route path="/contact">
+                                                        <Blog sidebar={sidebar} setSidebar={setSidebar} />
+                                                </Route>
+                                                <Route path="/blog">
+                                                        <Contact sidebar={sidebar} setSidebar={setSidebar} /> 
                                                 </Route>
                                                 
                                         </Router>

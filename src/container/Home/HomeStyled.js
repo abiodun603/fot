@@ -17,7 +17,7 @@ export const HomeContent = styled.div`
 export const HomePage = styled.div`
     display: flex;
     flex-direction: row;
-    min-height: 514px;
+    height: 100%;
     padding-right: ${SIZES.padding};
     background-repeat:no-repeat;
     background-size: cover;
@@ -28,6 +28,7 @@ export const HomePage = styled.div`
     }
     @media screen and (max-width: 890px){
         flex-direction: column;
+        height: 100%;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -36,6 +37,7 @@ export const HomePage = styled.div`
     @media screen and (max-width: 475px){
         padding-left: 0px;
         padding-right: 0px;
+        height: 100%;
      }
 
     
@@ -53,18 +55,26 @@ export const LeftSection = styled.div`
     @media screen and (max-width:1120px){
         width: 100%;
         margin-right: 0;
+        height: 100%;
+    }
+
+    @media screen and (max-width:475px){
+        padding:0 20px;
     }
     
 
 `;
 export const LeftText = styled.div`
       padding: ${SIZES.padding};
-      @media screen and (max-width: 600px){
-        padding: 50px;
-    }
+      
     @media screen and (max-width: 600px){
         padding: 20px;
     }
+
+    @media screen and (max-width: 477px){
+        padding:10px 0;
+    }
+    
 `;
 
 export const LandingTitle = styled.div`
@@ -76,13 +86,11 @@ export const LandingTitle = styled.div`
     @media screen and (max-width: 890px){
         font-size: 36px;
     }
-    @media screen and (max-width: 475px){
-        font-size: 29px;   
-        max-width: 350px;
+    @media screen and (max-width: 475px){  
         display: flex;
         justify-self: center;
         flex-wrap:wrap;
-        margin-left:40px;
+        margin-left:0px;
     }
 
   
@@ -96,12 +104,11 @@ export const LandingSubTitle = styled.div`
         font-size: 24px;
     }
     @media screen and (max-width: 475px){
-        font-size: 20px;   
         max-width: 350px;
         display: flex;
         justify-self: center;
         flex-wrap:wrap;
-        margin-left:40px;
+        margin-left:0px;
     }
 
 `;
@@ -326,17 +333,21 @@ export const HomeService = styled.div`
         @media screen and (max-width: 1047px){
             flex-direction: column;
             align-items:center;
-            justify-content:center;
+            justify-content:center; 
         }
 
     
     }
 
     .solution_info img {
+        margin-right: 20px;
+        @media screen and (max-width: 1118px){
+            width:90%;
+        }
         @media screen and (max-width: 1047px){
             height:400px;
             padding-top: 30px;
-
+            
         }
 
         @media screen and (max-width: 500px){
@@ -346,19 +357,33 @@ export const HomeService = styled.div`
 
     }
 
+    .solution_slider {
+        max-width: 600px;
+        margin-bottom: 40px;
+        @media screen and (max-width: 1100px){
+            margin-bottom: 5px;
+ 
+        }
+        @media screen and (max-width: 1047px){
+            width: 100%;
+            height: 400px;
+            max-height: 100%;
+ 
+        }
+
+        @media screen and (max-width: 434px){
+            height: 500px;
+        }
+    }
+
     .solution_body {
         margin-top:100px;
-        margin-bottom:50px;
-        margin-left: 87px;
-        margin-right: 99px;
-        @media screen and (max-width: 1205px){
-            margin-left:20px;
-        }
-        @media screen and (max-width: 1120px){
-            margin-right: 20px;
-        }
+        padding-right: 30px;
 
-
+        @media screen and (max-width: 1047px){
+            padding-left:30px;
+            margin-top:5px; 
+        }
     }
     .solution_title {
         font-weight: 600;
@@ -387,6 +412,12 @@ export const HomeTest = styled.div`
     height: 637px;
     padding-top: 104px;
     background: url(${process.env.PUBLIC_URL + `/Image/home/testimonialBg.svg`});
+    display:flex;
+    flex-direction: column;
+
+    @media screen and (max-width:502px){
+        padding-bottom: 30px;
+    }
 
     .home_test_title {
         font-weight: 600;
@@ -394,8 +425,16 @@ export const HomeTest = styled.div`
         line-height: 132.69%;
         text-align: center;
         color: #FFFFFF;
-    }
+        margin-bottom:20px;
 
+        @media screen and (max-width:502px){
+            font-size: 36px;
+        }
+
+        @media screen and (max-width:370px){
+            font-size: 30px;
+        }
+    }
     .home_test_subtitle {
         font-size: 24px;
         line-height: 137.2%;
@@ -403,4 +442,214 @@ export const HomeTest = styled.div`
         color: #FFFFFF;
     }
 
+
+    .test_card {
+        display: flex;
+        flex-direction:row;
+        margin: 0 20px;
+        margin-top:47px;
+        @media screen and (max-width: 500px){
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+        }
+        
+    }
+
+    .card_item{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        margin-top: 20px;
+        position: relative;
+    
+    }
+
+    .comment_icon {
+        position: absolute;
+        top:-5%;
+        right:75%;
+    }
+    
+    .card_center{
+        text-align:center;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .testimony {
+        font-size: 16px;
+        text-align: center;
+        width: 300px;
+        color: #FFFFFF;
+        font-weight:normal;
+
+     }
+    .person_img img{
+        position:relative;
+        border:5px solid #fff;
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        background-repeat:no-repeat;
+        display:flex;
+        margin-top: 28px;
+        background: white;
+        justify-content:center;
+        justify-self:center;
+        align-self:center;
+        margin-bottom: 10px;
+
+    }
+
+   
+
+    
+
+    .person_detail p{
+        color: #fff;
+        font-size: 14px;
+        
+    }
+
+    .person_detail span {  
+        display:block;
+        color: ${COLORS.red};
+        font-size: 14px;
+    }
+    
+    @media screen and (max-width: 500px){
+        height: 100%;
+        justify-content: center;
+    }
     `;
+
+export const HomeQuoteWrapper = styled.div `
+    background: #030762;
+    width: 85%;
+    height: 300px;
+    margin: 2.5rem auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+
+`;
+export const HomeQuoteContainer = styled.div `
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0 20px;
+
+    h3{
+        color: #FFFFFF;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: .5rem;
+
+        @media screen and (max-width: 500px) {
+            font-size: 20px;
+        }
+    }
+
+    p{
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: .5rem;
+        text-align: center;
+    }
+`;
+
+
+export const Button = styled.button `
+    width: 170px;
+    border-radius: 10px;
+    
+    border: none;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 6px; 
+    background: #030762;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`
+
+export const HomeConnected  = styled.div`
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    padding-top: 40px;
+    padding-bottom: 70px;
+
+    h3{
+        font-size: 36px;
+        font-weight: 600;
+        color: ${COLORS.darkblue};
+    }
+
+    p{
+        text-align:center;
+        font-size: 16px;
+        color: #505050;
+    }
+
+    .subscribe {
+        width: 557px;
+        height: 48px;
+        border: 0.3px solid #070E4A;
+        box-sizing: border-box;
+        border-radius: 8px;
+        display:flex;
+        align-items:center;
+        padding-left: 30px;
+        margin-top: 20px;
+        justify-content:space-between;
+        @media screen and (max-width: 635px){
+            width: 400px;
+        }
+
+        @media screen and (max-width: 500px){
+            width: 300px;
+        }
+    }
+
+    input {
+        
+        border:none;
+        outline: none !important;
+    }
+
+    input::placeholder {
+        font-family:Roboto;
+        color: #D0D0D0;
+        font-size: 13px;
+        
+    }
+
+    button {
+        
+        height: 38px;
+        background: #070E4A;
+        border-radius: 4px;
+        color: #fff;
+        border:none;
+        outline: none !important;
+        margin-right: 3px;
+        
+    }
+
+
+`;
+
+

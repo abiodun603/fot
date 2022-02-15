@@ -26,16 +26,16 @@ function Navbar(props) {
                             <Link to='/elearn' className="sidebar_text">
                                 e-learning
                             </Link>
-                            <Link to='/' className="sidebar_text">
+                            <Link to='/blog' className="sidebar_text">
                                 Blog
                             </Link>
-                            <Link to='/' className="sidebar_text">
+                            <Link to='/about' className="sidebar_text">
                                 About
                             </Link>
-                            <Link to='/' className="sidebar_text">
+                            <Link to='/service' className="sidebar_text">
                                 Our services
                             </Link>
-                            <Link to='/' className="sidebar_text">
+                            <Link to='/contact' className="sidebar_text">
                                 Contact
                             </Link>
                      </div>
@@ -91,13 +91,13 @@ function Navbar(props) {
                             <NavLinks to='/elearn'>
                                 e-learning
                             </NavLinks>
-                            <NavLinks to='/'>
+                            <NavLinks to='/blog'>
                                 Blog
                             </NavLinks>
                             <NavLinks to='/about'>
                                 About
                             </NavLinks>
-                            <NavLinks to='/'>
+                            <NavLinks to='/contact'>
                                 Contact
                             </NavLinks>
                         </NavList>

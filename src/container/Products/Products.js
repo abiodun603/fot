@@ -374,6 +374,13 @@ export const ProductItems = styled(Link)`
         margin-right: 0;
         
     }
+
+    @media screen and (max-width: 400px){
+        max-width: 300px;
+        margin-right: 0;
+        
+    }
+
     
 `;
 
@@ -411,6 +418,11 @@ export const ProductImage = styled.div`
 
     @media screen and (max-width: 557px){
         max-width: 350px;    
+    }
+
+    @media screen and (max-width: 400px){
+        max-width: 300px;
+        
     }
     
 `;

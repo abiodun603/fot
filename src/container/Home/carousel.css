@@ -1,3 +1,61 @@
+/* custom bullets style */
+.swiper-pagination {
+    text-align: left;
+    display: flex;
+    justify-content: start;  
+    
+}
+
+@media screen and (max-width: 1047px){
+    .swiper-pagination {
+        padding-left: 30px;  
+    }
+}
+
+
+.swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px; 
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+.swiper-pagination .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #FD0014;
+  }
+  
+
+.swiper-button-next {
+    background-image: url(../../assets/image/arrow_drop_down_circle.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    display: block;
+    margin-top:20px;
+  }
+  
+  .swiper-button-next::after {
+    display: none;
+  }
+
+.swiper-button-prev {
+    background-image: url(../../assets/image/arrow_prev_drop_down_circle.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+  
+  .swiper-button-prev::after {
+    display: none;
+  }
+
+
+
 
 .custom-indicator {
   bottom: -65px;
