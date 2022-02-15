@@ -5,7 +5,7 @@ import {DesContainer,Container,DescPic,Image,DesContent,DesHeader,SubHeader,SubT
 function Description(props) {
     useEffect(() => {
         props.setSidebar(false);
-    },[]);
+    },[props]);
     return (
         <>
             <HeadFoot {...props}>
@@ -30,7 +30,8 @@ function Description(props) {
                                 <Ptag>» Unique and seamless NOJA Power Android and iOS App enhances linesmen comfort and safety </Ptag>
                                 <Ptag>» Internal double pole position indicator micro switches for added reliability</Ptag>
                                 <Ptag>» Triple shielded, water blocked and metal conduit protected control cable with military grade IP65
-                                rated connectors</Ptag>
+                                rated connectors
+                                </Ptag>
                                 <Ptag>» Grey powder coated tank to prevent drivers from being blinded by the sunlight reflecting on
                                 the tank</Ptag>
                                 <Ptag>» Only 3 electronic modules in total that can be replaced within 5 minutes with a simple screwdriver » Remote and quick firmware 

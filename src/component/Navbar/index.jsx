@@ -97,7 +97,7 @@ function Navbar(props) {
                             <NavLinks to='/about'>
                                 About
                             </NavLinks>
-                            <NavLinks to='/contact'>
+                            <NavLinks to='/blog'>
                                 Contact
                             </NavLinks>
                         </NavList>
