@@ -7,7 +7,7 @@ import mail from "../../assets/image/contact/mail.svg"
 import customer from "../../assets/image/contact/customer.svg"
 import contact from "../../assets/image/contact/contact-hr.svg"
 import {HiOutlineArrowNarrowRight} from "react-icons/hi"
-import pole from "../../assets/image/about/pole.svg"
+import pole from "../../assets/image/about/pole.svg";
 
 
 const Blog = (props) => {

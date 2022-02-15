@@ -1,4 +1,30 @@
 
+export const landingCarousel = [
+    {
+        id: 1,
+        image: "pole.png"
+    },
+    {
+        id: 2,
+        image: "pole.png"
+    },
+    {
+        id:3,
+        image: "pole.png"
+    }
+];
+
+export const solutionCarousel = [
+    {
+        id: 1,
+        image: "servicpic.svg",
+        title: "Electrical Installations",
+        subtitle: "You cannot afford to have installations done wrong. Do not put your personnel, equipment, and entire distribution network in the hands of amateurs. Work with our experts to implement your projects up to 330KV Substation installations. ",
+        subtitle2:'We have comprehensive training on how to install state-of-the-art electrical equipment.'    
+    }
+]
+
+
 export const Nojaproducts = [
     {
         name: "OSM Three Phase",

@@ -102,7 +102,7 @@ export const NavTopHeader = styled.div`
     }
     
 
-    @media screen and (max-width: 749px){
+    @media screen and (max-width: 760px){
         padding-right: 20px;
         paddin-left: 20px;
     }
@@ -289,18 +289,7 @@ export const NavHamBar = styled(FaBars)`
 export const LogoBar = styled.div`
     margin-right: 89px;
     display:flex;
-    @media screen and (max-width: 687px){
-        margin-left:200px;
-
-    }
     
-    @media screen and (max-width: 704px){
-        margin-right: 30px;   
-    }
-
-    @media screen and (max-width: 573px){
-        margin-left: 100px;   
-    }
 
 
    
@@ -373,11 +362,12 @@ export const NavLinks = styled(Link)`
    }
 
    @media screen and (max-width: 704px){
-    font-size: 12px;  
+    
+        font-size: 12px;  
     }
     
    @media screen and (max-width: 698px){
-        padding-right: 20px;
+       
     }
 
     @media screen and (max-width: 689px){

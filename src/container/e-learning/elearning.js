@@ -116,6 +116,11 @@ export const ElearningStore = styled.div`
     }
     @media screen and (max-width: 556px){
         align-items: center;
+       
+        padding-left:30px;
+    }
+    @media screen and (max-width: 470px){
+        padding-left:0;
     }
 `;
 
